@@ -57,3 +57,15 @@ if context.is_offline_mode():
     run_migrations_offline()
 else:
     run_migrations_online()
+
+
+# This line sets up alembic configuration
+config = context.config
+
+# Interpret the config file for Python logging
+fileConfig(config.config_file_name)
+
+# Override sqlalchemy.url path
+database_url = os.environ.get('DATABASE_URL')
+if database_url:
+    config.set_main_option('sqlalchemy.url', database_url)
