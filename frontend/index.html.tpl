@@ -28,7 +28,7 @@
     </style>
 </head>
 <body>
-    <h1>TODO App</h1>
+    <h1>TODO App in {{ENVIRONMENT_NAME}}</h1>
     <input type="text" id="newTodo" placeholder="Enter a new todo">
     <button onclick="addTodo()">Add</button>
     <ul id="todoList"></ul>
