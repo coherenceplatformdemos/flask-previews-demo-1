@@ -34,7 +34,7 @@
     <ul id="todoList"></ul>
 
     <script>
-        const API_URL = 'https://{{API_URL}}';  // Update this to match your backend URL
+        const API_URL = 'https://{{API_URL}}/api';  // Update this to match your backend URL
 
         async function fetchTodos() {
             const response = await fetch(`${API_URL}/todos`);
